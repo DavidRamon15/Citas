@@ -1,0 +1,34 @@
+<div class="client-form" id="client-form">
+  <h2 class="subtitle">{{title}}</h2>
+
+  <button (click)="removeClient()" class="btn btn-danger ">
+    Eliminar
+  </button>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label for="CIF">CIF de la Empresa:</label>
+    <input type="text" id="CIF" name="CIF" formControlName="CIF">
+
+    <label for="companyName">Nombre de la Compañia:</label>
+    <input type="text" id="companyName" name="companyName" formControlName="companyName">
+
+    <label for="address">Dirección:</label>
+    <input type="text" id="address" name="address" formControlName="address">
+
+    <label for="municipality">Municipio:</label>
+    <input type="text" id="municipality" name="municipality" formControlName="municipality">
+
+    <label for="province">Provincia:</label>
+    <input type="text" id="province" name="province" formControlName="province">
+
+    <label for="startDate">Fecha inicio:</label>
+    <input type="date" id="startDate" name="startDate" formControlName="startDate">
+
+    <label for="endDate">Fecha final:</label>
+    <input type="date" id="endDate" name="endDate" formControlName="endDate">
+
+    <label for="numReco">Número Reconocimientos:</label>
+    <input type="number" id="numReco" name="numReco" formControlName="numReco" min="0">
+
+    <button class="btn-submit" type="submit">Editar</button>
+  </form>
+</div>

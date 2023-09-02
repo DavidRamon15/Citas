@@ -1,0 +1,15 @@
+<div class="box">
+  <h1 class="title">RESERVAS</h1>
+  <div class="divBtn">
+    <button (click)="navigateToClients()" class="btn-Clients">
+      Clientes
+    </button>
+    <button (click)="createAppointment()" class="btn-create ">
+      Crear nueva cita
+    </button>
+  </div>
+  <div class="row divTable ">
+    <table id="table-reservation" class="table table-striped" datatable [dtOptions]="dtOptions" style="width: 100%;">
+    </table>
+  </div>
+</div>

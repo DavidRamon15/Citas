@@ -1,0 +1,36 @@
+<div class="boxCalendar">
+  <h1 class="titleCalendar">PEDIR CITA</h1>
+
+  <div id="calendar"></div>
+  <div id="buttons-container"></div>
+
+
+
+  <div class="button-group" id="button-group">
+
+  </div>
+
+  <div *ngIf="showForm" class="registration-form" id="registration-form">
+    <h2>Formulario de Registro</h2>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <label for="CIF">CIF de la Empresa:</label>
+      <!-- <input type="text" id="CIF" name="CIF" formControlName="CIF">-->
+      <select id="CIF" name="CIF" formControlName="CIF">
+        <option *ngFor="let client of clients">{{client.CIF}}</option>
+      </select>
+
+      <label for="numEmployee">Número de empleados:</label>
+      <input type="number" id="numEmployee" name="numEmployee" formControlName="numEmployee" min="0">
+
+      <label for="startTime">Hora inicio</label>
+      <input type="time" id="startTime" name="startTime" formControlName="startTime">
+
+      <label for="endTime">Hora fin</label>
+      <input type="time" id="endTime" name="endTime" formControlName="endTime">
+
+
+
+      <button type="submit">Reservar</button>
+    </form>
+  </div>
+</div>

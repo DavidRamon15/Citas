@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  width: 100%;
+  font-family: "Verdana (sans-serif)", Arial, Helvetica;
+  font-size: 15px;
+  height: 80%;
+  background: rgb(0, 36, 12);
+  background: linear-gradient(100deg, rgba(0, 36, 12, 0.7595413165266106) 0%, rgba(9, 121, 93, 0.7315301120448179) 33%, rgba(4, 201, 116, 0.6839110644257703) 68%, rgba(0, 255, 162, 0.6811099439775911) 100%);
+  background-attachment: fixed;
+}
+
+.box {
+  width: 90%;
+  margin: 50px auto;
+  padding-bottom: 50px;
+  border-radius: 25px;
+
+}
+
+.divTable {
+  background-color: azure;
+  width: 90%;
+  margin: 10px auto 10px;
+  border: 1px solid grey;
+  border-radius: 25px;
+  padding: 20px;
+  -webkit-box-shadow: 11px 20px 13px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 11px 20px 13px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 11px 20px 13px -6px rgba(0, 0, 0, 0.75);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px 10px;
+  color: white;
+  font-weight: 500;
+  cursor: default;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px 10px;
+  font-weight: 500;
+}
+
+.divBtn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.divBtn button {
+  border-radius: 15px;
+  width: 25%;
+  height: 30%;
+  padding: 10px;
+  margin: 30px;
+}
+
+.btn-create {
+  background-color: #26a316;
+  color: white;
+}
+
+.divTable table thead tr th {
+  text-align: center;
+  cursor: default;
+}
+
+.divTable table tbody tr td {
+  text-align: center;
+  cursor: default;
+}
